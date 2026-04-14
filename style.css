@@ -8,13 +8,13 @@ body {
   background-color: #043873;
 }
 
-header{
-    padding: 16px 0;
+header {
+  padding: 16px 0;
 }
 
-.container{
-    max-width: 1480px;
-    margin: 0 auto;
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -27,10 +27,10 @@ header{
   align-items: center;
 }
 
-.links{
-    display: flex;
-    gap: 70px;
-    flex-wrap: wrap;
+.links {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
 }
 
 .links a {
@@ -58,104 +58,235 @@ header{
   color: white;
 }
 
-.header__nav{
+.header__nav {
+  display: flex;
+  gap: 10px 96px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-section {
+  height: 829px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  gap: 24px;
+}
+
+.text-block h2 {
+  font-size: 64px;
+  color: white;
+  width: 100%;
+}
+
+.texts {
+  max-width: 656px;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  margin: 24px 0 64px;
+}
+
+.img-block {
+  height: 529px;
+  width: 824px;
+  background-color: skyblue;
+}
+
+.hero-section .container {
+  display: flex;
+  align-items: center;
+}
+
+.project-managment,
+.work-together {
+  background-color: white;
+  height: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-managment .container,
+.work-together .container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-managment h2,
+.work-together h2 {
+  z-index: 2;
+  position: relative;
+}
+
+.element {
+  position: absolute;
+  bottom: -15px;
+  z-index: 1;
+}
+
+.work-together .element {
+  width: 298px;
+  right: 0;
+}
+
+.heading {
+  position: relative;
+  width: max-content;
+}
+
+.project-managment .text-block,
+.work-together .text-block {
+  max-width: 672px;
+}
+
+.project-managment h2,
+.project-managment p,
+.work-together h2,
+.work-together p {
+  color: #212529;
+}
+
+.project-managment .img-block {
+  width: 748px;
+}
+
+.choose-plan {
+  background-color: white;
+  height: 1272px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-plan h2,
+.choose-plan p {
+  color: #212529;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: 979px;
+  margin: 0 auto;
+}
+
+.choose-plan .heading {
+  margin: 0 auto;
+}
+
+.choose-plan .free , .choose-plan .organization {
+  width: 472px;
+  height: 634px;
+  padding: 40px;
+  border: 1px solid #ffe492;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+
+.choose-plan .price {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.free .price span:nth-child(1) , .organization .price span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.free .price span:nth-child(2), .organization .price span:nth-child(2) {
+  font-size: 36px;
+  font-weight: 800;
+  color: #212529;
+}
+
+.free .price span:nth-child(3), .organization .price span:nth-child(3) {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212529;
+}
+
+
+
+.choose-plan ul {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.choose-plan ul li {
+  font-size: 16px;
+  color: #212529;
+}
+
+.choose-plan .free button , .organization button {
+  width: 166px;
+  height: 51px;
+  background-color: transparent;
+  border: 1px solid #ffe492;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.choose-plan .personal {
+  padding: 40px;
+  width: 471px;
+  height: 761px;
+  background-color: #043873;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.personal .price span,
+.personal ul li {
+  color: white;
+}
+
+.subscriptions {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.personal .price span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.personal .price span:nth-child(2) {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffe492;
+}
+
+.personal .price span:nth-child(3) {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.choose-plan .container{
     display: flex;
-    gap:10px 96px ;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.hero-section{
-    height: 829px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btns{
-    display: flex;
-    gap: 24px;
-}
-
-.text-block h2{
-    font-size: 64px;
-    color: white;
-width: 100%;
-}
-
-.texts{
-    max-width: 656px;
-}
-
-p{
-    color: white;
-    font-size: 18px;
-    width: 100%;
-    margin: 24px 0 64px ;
-}
-
-.img-block{
-    height: 529px;
-    width: 824px;
-    background-color: skyblue;
-}
-
-.hero-section .container{
-display: flex;
-align-items: center;
-}
-
-.project-managment , .work-together{
-    background-color: white;
-    height: 760px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-managment .container , .work-together .container{
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.project-managment h2 , .work-together h2{
-    z-index: 2;
-    position: relative;
-}
-
-.element{
-    position: absolute;
-    bottom: -15px;
-    z-index: 1;
-}
-
-.work-together .element{
-    width: 298px;
-    right: 0;
-}
-
-.heading{
-    position: relative;
-    width: max-content;
-}
-
-.project-managment .text-block , .work-together .text-block{
-    max-width: 672px;
-}
-
-.project-managment h2 , .project-managment p , .work-together h2 , .work-together p{
-    color: #212529;
-}
-
-.project-managment .img-block{
-    width: 748px;
+flex-direction: column;
+gap: 60px;
 }
