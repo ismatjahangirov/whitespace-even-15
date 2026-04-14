@@ -112,3 +112,45 @@ display: flex;
 align-items: center;
 }
 
+.project-managment{
+    background-color: white;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-managment .container{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-managment h2{
+    z-index: 2;
+    position: relative;
+}
+
+.element{
+    position: absolute;
+    bottom: -15px;
+    z-index: 1;
+}
+
+
+.heading{
+    position: relative;
+}
+
+.project-managment .text-block{
+    max-width: 672px;
+}
+
+.project-managment h2 , .project-managment p{
+    color: #212529;
+}
+
+.project-managment .img-block{
+    width: 748px;
+}
