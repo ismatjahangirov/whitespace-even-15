@@ -138,9 +138,14 @@ align-items: center;
     z-index: 1;
 }
 
+.work-together .element{
+    width: 298px;
+    right: 0;
+}
 
 .heading{
     position: relative;
+    width: max-content;
 }
 
 .project-managment .text-block , .work-together .text-block{
