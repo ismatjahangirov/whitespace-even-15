@@ -112,7 +112,7 @@ display: flex;
 align-items: center;
 }
 
-.project-managment{
+.project-managment , .work-together{
     background-color: white;
     height: 760px;
     display: flex;
@@ -120,14 +120,14 @@ align-items: center;
     align-items: center;
 }
 
-.project-managment .container{
+.project-managment .container , .work-together .container{
     display: flex;
     gap: 60px;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.project-managment h2{
+.project-managment h2 , .work-together h2{
     z-index: 2;
     position: relative;
 }
@@ -143,11 +143,11 @@ align-items: center;
     position: relative;
 }
 
-.project-managment .text-block{
+.project-managment .text-block , .work-together .text-block{
     max-width: 672px;
 }
 
-.project-managment h2 , .project-managment p{
+.project-managment h2 , .project-managment p , .work-together h2 , .work-together p{
     color: #212529;
 }
 
